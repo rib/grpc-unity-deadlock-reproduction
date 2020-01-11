@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package test.grpc;
+
+message Empty {}
+
+message Ping {
+    uint64 epochSendTimestampNS = 1;
+}
+
+message Pong {
+    uint64 epochSendTimestampNS = 1;
+}
+
+service Test {
+    rpc OpenTestStream(Empty) returns (stream Empty);
+    rpc SendPing(Ping) returns (Pong);
+}
