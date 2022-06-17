@@ -12,7 +12,7 @@ futures-util = "0.3"
 futures-locks = "0.5"
 async-stream = "0.2.0"
 tokio = { version = "0.2", features = [ "full" ] }
-hyper = { version = "0.13" }
+hyper = { version = "0.14" }
 bytes = "0.4"
 prost = "0.5"
 prost-derive = "0.5"
